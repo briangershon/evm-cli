@@ -1,6 +1,6 @@
 # EVM CLI
 
-A command-line tool for Ethereum wallet operations.
+A command-line tool for Ethereum (EVM) wallet operations.
 
 ## Setup
 
@@ -81,6 +81,7 @@ evm-cli help
 ### MetaMask
 
 **Option 1: Import via Private Key**
+
 1. **Open MetaMask** and click the account circle in the top right
 2. **Select "Import Account"** from the dropdown menu
 3. **Choose "Private Key"** as the import type
@@ -88,6 +89,7 @@ evm-cli help
 5. **Click "Import"** - your wallet will be added to MetaMask
 
 **Option 2: Import via Seed Phrase**
+
 1. **Open MetaMask** and click the account circle in the top right
 2. **Select "Import using Secret Recovery Phrase"**
 3. **Enter your 12-word mnemonic** (the word phrase from the CLI output)
@@ -96,13 +98,14 @@ evm-cli help
 ### Brave Wallet
 
 **Import via Seed Phrase** (Recommended)
+
 1. **Open Brave Wallet** (Menu → More Tools → Crypto Wallets)
 2. **Click "Already have a wallet?"**
 3. **Select "Import wallet"**
 4. **Enter your 12-word mnemonic** (the word phrase from the CLI output)
 5. **Set a password** and click "Continue"
 
-*Note: Brave Wallet does not support direct private key import. Use the mnemonic seed phrase instead.*
+_Note: Brave Wallet does not support direct private key import. Use the mnemonic seed phrase instead._
 
 ## Security Warning
 
