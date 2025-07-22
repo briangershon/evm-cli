@@ -18,13 +18,10 @@ The project is written in TypeScript. Source files are in the `src/` directory.
 
 ```bash
 # Run directly with tsx (for development)
-npm run dev generate-wallet
+npm run evm-cli generate-wallet
 
 # Build TypeScript to JavaScript
 npm run build
-
-# Test the CLI locally
-npm run evm-cli generate-wallet
 ```
 
 ## Usage

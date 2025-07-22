@@ -8,7 +8,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/index.ts",
     "evm-cli": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
