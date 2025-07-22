@@ -63,8 +63,9 @@ Output:
 
 ```
 Generated new wallet:
-Address: 0x1234567890123456789012345678901234567890
-Private Key: 0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890
+Mnemonic: swallow want morning impact drift problem version focus chimney again worth address
+Address: 0x5AB78171430243aC8393361020C9065499ccB7D7
+Private Key: 0x4023b5b383483283b81a93b2bffc59c4c264b4faddb406812e03fb6e9f5959c4
 ```
 
 #### `help`
@@ -79,33 +80,42 @@ evm-cli help
 
 ### MetaMask
 
+**Option 1: Import via Private Key**
 1. **Open MetaMask** and click the account circle in the top right
 2. **Select "Import Account"** from the dropdown menu
 3. **Choose "Private Key"** as the import type
 4. **Paste your private key** (the 0x... string from the CLI output)
 5. **Click "Import"** - your wallet will be added to MetaMask
 
+**Option 2: Import via Seed Phrase**
+1. **Open MetaMask** and click the account circle in the top right
+2. **Select "Import using Secret Recovery Phrase"**
+3. **Enter your 12-word mnemonic** (the word phrase from the CLI output)
+4. **Set a password** and click "Import"
+
 ### Brave Wallet
 
+**Import via Seed Phrase** (Recommended)
 1. **Open Brave Wallet** (Menu → More Tools → Crypto Wallets)
-2. **Click the account menu** (top right corner)
-3. **Select "Import Account"**
-4. **Choose "Import from private key"**
-5. **Paste your private key** (the 0x... string from the CLI output)
-6. **Give it a name** and click "Import"
+2. **Click "Already have a wallet?"**
+3. **Select "Import wallet"**
+4. **Enter your 12-word mnemonic** (the word phrase from the CLI output)
+5. **Set a password** and click "Continue"
+
+*Note: Brave Wallet does not support direct private key import. Use the mnemonic seed phrase instead.*
 
 ## Security Warning
 
-⚠️ **Important**: The generated private keys are displayed in plain text. In a production environment, consider:
+⚠️ **Important**: The generated mnemonic and private keys are displayed in plain text. In a production environment, consider:
 
-- Storing private keys securely
+- Storing seed phrases and private keys securely
 - Using environment variables or secure storage
-- Never sharing or committing private keys to version control
-- Only import private keys you generated yourself
-- Never share your private key with anyone
+- Never sharing or committing mnemonics/private keys to version control
+- Only import seed phrases you generated yourself
+- Never share your mnemonic or private key with anyone
 - Consider these test wallets only - don't store significant funds
 - Use hardware wallets for production/mainnet funds
-- The private key gives complete control over the wallet
+- Both the mnemonic and private key give complete control over the wallet
 
 ## Dependencies
 

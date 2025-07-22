@@ -1,23 +1,27 @@
 #!/usr/bin/env node
 
-import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts';
+import { generateMnemonic, english, mnemonicToAccount } from 'viem/accounts';
+import { bytesToHex } from 'viem';
 import type { Address, Hex } from 'viem';
 
 interface WalletInfo {
+  mnemonic: string;
   address: Address;
   privateKey: Hex;
 }
 
 function generateWallet(): WalletInfo {
-  const privateKey = generatePrivateKey();
-  const account = privateKeyToAccount(privateKey);
+  const mnemonic = generateMnemonic(english);
+  const account = mnemonicToAccount(mnemonic);
   
   const walletInfo: WalletInfo = {
+    mnemonic: mnemonic,
     address: account.address,
-    privateKey: privateKey
+    privateKey: bytesToHex(account.getHdKey().privateKey!)
   };
   
   console.log('Generated new wallet:');
+  console.log('Mnemonic:', walletInfo.mnemonic);
   console.log('Address:', walletInfo.address);
   console.log('Private Key:', walletInfo.privateKey);
   
