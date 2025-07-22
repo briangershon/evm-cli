@@ -8,12 +8,11 @@
   },
   "scripts": {
     "build": "tsc",
-    "evm-cli": "tsx src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "evm-cli": "tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A CLI tool for Ethereum wallet operations",
   "dependencies": {
     "viem": "^2.33.0"
