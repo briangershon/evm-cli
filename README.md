@@ -75,6 +75,25 @@ Shows available commands and usage information.
 evm-cli help
 ```
 
+## Importing Private Key into Wallets
+
+### MetaMask
+
+1. **Open MetaMask** and click the account circle in the top right
+2. **Select "Import Account"** from the dropdown menu
+3. **Choose "Private Key"** as the import type
+4. **Paste your private key** (the 0x... string from the CLI output)
+5. **Click "Import"** - your wallet will be added to MetaMask
+
+### Brave Wallet
+
+1. **Open Brave Wallet** (Menu → More Tools → Crypto Wallets)
+2. **Click the account menu** (top right corner)
+3. **Select "Import Account"**
+4. **Choose "Import from private key"**
+5. **Paste your private key** (the 0x... string from the CLI output)
+6. **Give it a name** and click "Import"
+
 ## Security Warning
 
 ⚠️ **Important**: The generated private keys are displayed in plain text. In a production environment, consider:
@@ -82,6 +101,11 @@ evm-cli help
 - Storing private keys securely
 - Using environment variables or secure storage
 - Never sharing or committing private keys to version control
+- Only import private keys you generated yourself
+- Never share your private key with anyone
+- Consider these test wallets only - don't store significant funds
+- Use hardware wallets for production/mainnet funds
+- The private key gives complete control over the wallet
 
 ## Dependencies
 
